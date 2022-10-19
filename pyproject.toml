@@ -1,0 +1,18 @@
+[project]
+name = "fooasdqwe"  # no collision
+version = "0.1.0"
+description = "This is a test-description xyqwe"
+authors = [
+    {name = "Tom Solberg", email = "me@sbg.dev"},
+]
+dependencies = ["Sphinx"]
+requires-python = ">=3.8"
+license = {text = "MIT"}
+
+[project.optional-dependencies]
+foo = ["pyyaml>=1"]
+foobar = ["fooasdqwe[foo]"]
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
